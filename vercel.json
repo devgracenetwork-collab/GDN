@@ -1,15 +1,14 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/webhook.js",
-      "use": "@vercel/node"
-    }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "about.html", "use": "@vercel/static" },
+    { "src": "other-services.html", "use": "@vercel/static" },
+    { "src": "privacy.html", "use": "@vercel/static" },
+    { "src": "api/webhook.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/webhook",
-      "dest": "/api/webhook.js"
-    }
+    { "src": "/webhook", "dest": "/api/webhook.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
