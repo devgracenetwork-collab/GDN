@@ -1,0 +1,10 @@
+      <div class="card">
+        <div class="image-container">
+          <img src="assets/isabella.jpg" alt="Isabella">
+        </div>
+        <div class="card-content">
+          <h3 style="color: var(--color-primary);">Isabella</h3>
+          <p class="protea-accent" style="font-weight: 600;">Repatriations Specialist</p>
+          <p>Manages partner-facing repatriation coordination.</p>
+        </div>
+      </div>
